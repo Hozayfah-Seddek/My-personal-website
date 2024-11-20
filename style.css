@@ -217,6 +217,15 @@ span {
   line-height: 22px;
 }
 
+.body p a {
+  color: #2134dd;
+}
+
+.body p a:hover {
+  color: #3d49b9;
+  font-size: 25px;
+}
+
 .body .t a {
   color: var(--secondary-colour);
   font-size: 25px;
