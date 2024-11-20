@@ -236,11 +236,11 @@ span {
 }
 
 .body p a {
-  color: #2134dd;
+  color: #3d49b9;
 }
 
 .body p a:hover {
-  color: #3d49b9;
+  color: #2134dd;
   font-size: 25px;
 }
 
