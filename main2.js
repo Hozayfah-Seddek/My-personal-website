@@ -17,16 +17,3 @@ icon.onclick = function () {
     icon.src = "../images/moon.png";
   }
 };
-
-var ema = document.getElementById("ema");
-var pho = document.getElementById("pho");
-
-ema.addEventListener("click", function () {
-  let input = document.getElementById("ema").value;
-  document.execCommand("copy");
-});
-
-pho.addEventListener("click", function () {
-  let input = document.getElementById("pho").value;
-  document.execCommand("copy");
-});

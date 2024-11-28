@@ -218,34 +218,18 @@ span {
 }
 
 .body p a {
-  color: #3d49b9;
+  color: #2134dd;
 }
 
 .body p a:hover {
-  color: #2134dd;
-  font-size: 30px;
-}
-
-.body .t a {
-  color: var(--secondary-colour);
+  color: #3d49b9;
   font-size: 25px;
-  display: inline-block;
-}
-
-.body .t a:hover {
-  color: #2134dd;
-  font-size: 27px;
 }
 
 .body ul {
   color: var(--secondary-colour);
   font-size: 22px;
   line-height: 22px;
-}
-
-.t {
-  margin-right: 65%;
-  display: flex;
 }
 
 .ph {
@@ -277,13 +261,13 @@ span {
 }
 
 .arr {
-  font-size: 40px;
-  color: #212121;
+  font-size: 30px;
+  color: var(--secondary-colour);
 }
 
 .arr:hover {
   color: #3d49b9;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .iel {

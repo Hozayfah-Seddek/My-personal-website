@@ -236,11 +236,11 @@ span {
 }
 
 .body p a {
-  color: #3d49b9;
+  color: #2134dd;
 }
 
 .body p a:hover {
-  color: #2134dd;
+  color: #3d49b9;
   font-size: 25px;
 }
 
@@ -267,6 +267,16 @@ span {
   display: block;
   border: 5px solid #212121;
   border-radius: 10px;
+}
+
+.arr {
+  font-size: 30px;
+  color: var(--secondary-colour);
+}
+
+.arr:hover {
+  color: #3d49b9;
+  font-size: 35px;
 }
 
 .iel {
