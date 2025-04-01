@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>certificates</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
     <link rel="icon" href="../images/Logo.png">
 </head>
 
@@ -15,8 +15,9 @@
         <nav>
             <img src="../images/Logo.png" class="logo">
             <ul class="nav">
-                <li> <a href="../index.html"><i class="fa-solid fa-house"></i><br>Home</a></li>
-                <li> <a href="about.html" class="active"><i class="fa-solid fa-circle-info"></i><br>About</a></li>
+                <li> <a href="../home.html"><i class="fa-solid fa-house"></i><br>Home</a></li>
+                <li> <a href="about.html" ><i class="fa-solid fa-circle-info"></i><br>About</a></li>
+                <li> <a href="certificates.html" class="active"> <i class="fa-solid fa-file-certificate"></i><br>Certificates</a></li>
                 <li> <a href="portfolio.html"><i class="fa-solid fa-address-book"></i><br>Portfolio</a></li>
                 <li> <a href="hire.html"><i class="fa-solid fa-briefcase"></i><br>Hire Me</a></li>
             </ul>
@@ -28,11 +29,36 @@
                 </ul>
         </nav>
         <div class="body">
-            <h1><a href="./about.html" class="arr"><i class="fa-solid fa-arrow-left-long"></i></a></h1>
-            <h1>Java Bootcamp</h1>
-            <img src="../images/JavaCourse.png" class="jav"> <br> <br>
-            <h1>IELTS</h1>
-            <img src="../images/IELTS.png" class="iel"> <br> <br> <br> <br>
+            <ul class="accordion">
+            <li>
+                <input type="checkbox" name="acordion" id="first">
+                <label for="first">Courses</label>
+                <div class="content">
+                    <h1>The Complete Web Development Bootcamp – P. Angela Yu, London App Brewery on Udemy</h1>
+                    <h3><br>April 2025</h3>
+                    <img src="../images/IELTS.png" alt="Web Development Course">
+                    <br><br>
+                    <h1>The Complete Spring Boot Development Bootcamp – Learn The Part Inc. on Udemy</h1>
+                    <h3><br>January 2025</h3>
+                    <img src="../images/SpringBootCourse.jpg" alt="Spring Boot Course">
+                    <br><br>
+                    <h1>The Complete Java Development Bootcamp – Learn The Part Inc. on Udemy</h1>
+                    <h3><br>February 2024</h3>
+                    <img src="../images/JavaCourse.png" alt="Java Course">
+                    <br><br>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" name="acordion" id="second">
+                <label for="second">Language Proficiency</label>
+                <div class="content">
+                    <h1>IELTS</h1>
+                    <h3><br>6.5</h3>
+                    <img src="../images/IELTS.png" alt="IELTS">
+                    <br> <br>
+                </div>
+            </li>
+        </ul>
         </div>
 <script src="../main2.js"></script>
 </html>

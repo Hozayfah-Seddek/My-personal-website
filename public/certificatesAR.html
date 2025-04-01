@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>certificates</title>
     <link rel="stylesheet" href="../styleAR.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
     <link rel="icon" href="../images/Logo.png">
 </head>
 
@@ -15,22 +15,11 @@
         <nav>
             <img src="../images/Logo.png" class="logo">
             <ul>
-                <li>
-                    <a href="../indexAR.html"
-                    ><i class="fa-solid fa-house"></i><br />الرئيسية</a>
-                </li>
-                <li>
-                    <a href="./aboutAR.html" class="active"
-                    ><i class="fa-solid fa-circle-info"></i><br />عنّي</a>
-                </li>
-                <li>
-                    <a href="./portfolioAR.html"
-                    ><i class="fa-solid fa-address-book"></i><br />أعمالي</a>
-                </li>
-                <li>
-                    <a href="./hireAR.html"
-                    ><i class="fa-solid fa-briefcase"></i><br />وظفني</a>
-                </li>
+                <li><a href="../homeAR.html"><i class="fa-solid fa-house"></i><br />الرئيسية</a></li>
+                <li> <a href="./aboutAR.html"><i class="fa-solid fa-circle-info"></i><br>عنّي</a></li>
+                <li> <a href="certificatesAR.html" class="active"> <i class="fa-solid fa-file-certificate"></i><br>الشهادات</a></li>
+                <li> <a href="./portfolioAR.html"><i class="fa-solid fa-address-book"></i><br>أعمالي</a></li>
+                <li> <a href="./hireAR.html"><i class="fa-solid fa-briefcase"></i><br>وظفني</a></li>
             </ul>
             <img src="../images/moon.png" id="icon">
             <div class="lang-box">
@@ -41,11 +30,36 @@
             </div>
         </nav>
         <div class="body">
-            <h1><a href="./aboutAR.html" class="arr"><i class="fa-solid fa-arrow-right-long"></i></a></h1>
-            <h1>معسكر جافا</h1>
-            <img src="../images/JavaCourse.png" class="jav"> <br> <br>
-            <h1>آيلتس</h1>
-            <img src="../images/IELTS.png" class="iel"> <br> <br> <br> <br>
+            <ul class="accordion">
+            <li>
+                <input type="checkbox" name="acordion" id="first">
+                <label for="first">الدورات</label>
+                <div class="content">
+                    <h1>The Complete Web Development Bootcamp – P. Angela Yu, London App Brewery on Udemy</h1>
+                    <h3><br>أبريل 2025</h3>
+                    <img src="../images/IELTS.png" alt="Web Development Course">
+                    <br><br>
+                    <h1>The Complete Spring Boot Development Bootcamp – Learn The Part Inc. on Udemy</h1>
+                    <h3><br>يناير 2025</h3>
+                    <img src="../images/SpringBootCourse.jpg" alt="Spring Boot Course">
+                    <br><br>
+                    <h1>The Complete Java Development Bootcamp – Learn The Part Inc. on Udemy</h1>
+                    <h3><br>فبراير 2024</h3>
+                    <img src="../images/JavaCourse.png" alt="Java Course">
+                    <br><br>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" name="acordion" id="second">
+                <label for="second">اختبارات اللغة</label>
+                <div class="content">
+                    <h1>IELTS</h1>
+                    <h3><br>6.5</h3>
+                    <img src="../images/IELTS.png" alt="IELTS">
+                    <br> <br>
+                </div>
+            </li>
+        </ul>
         </div>
         <script src="../main2.js"></script>
 

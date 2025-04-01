@@ -364,6 +364,10 @@ input[type="checkbox"] {
   content: "-";
 }
 
+.accordion h1 {
+  line-height: 1;
+}
+
 .container {
   padding-right: 0px;
   padding-left: 0px;
@@ -381,7 +385,12 @@ input[type="checkbox"] {
 .row {
   padding-right: 0px;
   padding-left: 0px;
+  padding-bottom: 2px;
   margin-right: 0px;
   margin-left: 0px;
   text-align: left;
+}
+
+.col {
+  padding-top: 5px;
 }

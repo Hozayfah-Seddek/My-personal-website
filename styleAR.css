@@ -374,6 +374,10 @@ input[type="checkbox"] {
   content: "-";
 }
 
+.accordion h1 {
+  line-height: 1;
+}
+
 #icon {
   border: 3px solid var(--secondary-colour);
   border-radius: 55px;
@@ -399,4 +403,8 @@ input[type="checkbox"] {
   margin-right: 0px;
   margin-left: 0px;
   text-align: right;
+}
+
+.col {
+  padding-top: 5px;
 }
