@@ -1,5 +1,7 @@
 var icon = document.getElementById("icon");
 
+var item = document.getElementById("ite");
+
 // Check local storage for dark mode setting
 if (localStorage.getItem("dark-mode") === "enabled") {
   document.body.classList.add("dark-theme");

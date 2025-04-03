@@ -48,9 +48,20 @@ nav ul li a {
   color: var(--secondary-colour);
 }
 
+nav ul li a span {
+  text-decoration: none;
+  color: var(--secondary-colour);
+  display: inline-block;
+}
+
 nav ul li a:hover {
   color: #3d49b9;
   font-size: 27px;
+}
+
+nav ul li a:hover span {
+  color: #3d49b9;
+  font-size: 34px;
 }
 
 .active {
@@ -365,7 +376,7 @@ input[type="checkbox"] {
 }
 
 .accordion h1 {
-  line-height: 1.1;
+  line-height: 1;
 }
 
 .container {

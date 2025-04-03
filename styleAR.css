@@ -61,8 +61,10 @@ nav ul li a {
   color: var(--secondary-colour);
 }
 
-#icon {
-  margin-left: 15px;
+nav ul li a span {
+  text-decoration: none;
+  color: var(--secondary-colour);
+  display: inline-block;
 }
 
 nav ul li a:hover {
@@ -70,8 +72,21 @@ nav ul li a:hover {
   font-size: 27px;
 }
 
+nav ul li a:hover span {
+  color: #3d49b9;
+  font-size: 34px;
+}
+
 .active {
   color: #4551c1;
+}
+
+#icon {
+  border: 3px solid var(--secondary-colour);
+  border-radius: 55px;
+  margin-left: 15px;
+  width: 30px;
+  cursor: pointer;
 }
 
 .lang-box a:hover {
@@ -190,11 +205,6 @@ span {
 .social-links a:hover {
   color: #3d49b9;
   font-size: 35px;
-}
-
-#icon {
-  width: 30px;
-  cursor: pointer;
 }
 
 /* Theme */
@@ -376,11 +386,6 @@ input[type="checkbox"] {
 
 .accordion h1 {
   line-height: 1;
-}
-
-#icon {
-  border: 3px solid var(--secondary-colour);
-  border-radius: 55px;
 }
 
 .container {
