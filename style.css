@@ -30,6 +30,11 @@ nav {
   width: 100px;
 }
 
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
 nav ul {
   flex: 1;
   text-align: center;
@@ -78,6 +83,12 @@ nav ul li a:hover span {
   margin-right: 40px;
   width: 30px;
   cursor: pointer;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+#icon:hover {
+  transform: scale(1.2);
 }
 
 .nav {
@@ -412,4 +423,117 @@ input[type="checkbox"] {
 
 .col {
   padding-top: 5px;
+}
+
+/* Adjust img-box for medium screens (max-width: 1280px) */
+@media (max-width: 1280px) {
+  .img-box {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    margin-left: 5%;
+  }
+
+  .calc {
+    margin-right: 25%;
+  }
+
+  .conv {
+    margin-right: 15%;
+  }
+}
+
+/* Full-screen menu styles */
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background-color: var(--bg-colour); /* Matches the original background */
+  color: var(--primary-colour);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+}
+
+.burger-menu.active {
+  display: flex;
+}
+
+/* Ensure burger menu items are aligned to the left */
+.burger-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.burger-menu ul li {
+  margin: 15px 0;
+  font-size: 25px;
+  text-align: left; /* Align text to the left */
+  display: flex;
+  justify-content: flex-start; /* Ensure items are aligned to the left */
+  align-items: center; /* Align items vertically */
+}
+
+.burger-menu ul li a {
+  text-align: left; /* Ensure text inside links is aligned to the left */
+  text-decoration: none;
+  color: var(--secondary-colour);
+  flex: 1; /* Push the "X" button to the right */
+}
+
+.burger-menu ul li span {
+  margin-left: auto; /* Ensure the "X" button stays on the far right */
+}
+
+/* Ensure span and text have the same color when active */
+.burger-menu ul li a.active,
+.burger-menu ul li a.active span {
+  color: #4551c1; /* Matches the active color */
+}
+
+/* Style the burger menu button */
+.burger {
+  color: var(--secondary-colour); /* Match the list items' color */
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Hide the default nav on smaller screens */
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .img-box {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .accordion {
+    width: 90%;
+  }
+  .accordion li {
+    width: 90%;
+  }
+  .accordion li img {
+    max-width: 80%;
+    max-height: 300px;
+    padding: 0;
+    margin: 0;
+  }
 }

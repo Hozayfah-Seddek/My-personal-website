@@ -420,3 +420,109 @@ input[type="checkbox"] {
 .col {
   padding-top: 5px;
 }
+
+@media (max-width: 1280px) {
+  .img-box {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    margin-left: 5%;
+  }
+}
+
+/* Full-screen menu styles */
+.burger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: var(--bg-colour); /* Matches the original background */
+  color: var(--primary-colour);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+}
+
+.burger-menu.active {
+  display: flex;
+}
+
+.burger-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.burger-menu ul li {
+  margin: 15px 0;
+  font-size: 25px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right */
+}
+
+.burger-menu ul li:first-child {
+  margin-top: 0;
+}
+
+.burger-menu ul li a {
+  text-decoration: none;
+  color: var(--secondary-colour);
+  flex: 1; /* Push the "X" button to the right */
+}
+
+.burger-menu .close-btn {
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--secondary-colour);
+  margin-left: 20px;
+  display: block;
+}
+
+/* Ensure span and text have the same color when active */
+.burger-menu ul li a.active,
+.burger-menu ul li a.active span {
+  color: #4551c1; /* Matches the active color */
+}
+
+/* Style the burger menu button */
+.burger {
+  color: var(--secondary-colour); /* Match the list items' color */
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hide the default nav on smaller screens */
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  .accordion {
+    width: 80%;
+  }
+  .accordion li {
+    width: 90%;
+  }
+  .accordion li img {
+    max-width: 80%;
+    max-height: 300px;
+    padding: 0;
+    margin: 0;
+  }
+}

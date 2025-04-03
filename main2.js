@@ -17,3 +17,19 @@ icon.onclick = function () {
     icon.src = "../images/moon.png";
   }
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".burger");
+  const burgerMenu = document.querySelector(".burger-menu");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Open menu
+  burger.addEventListener("click", () => {
+    burgerMenu.classList.add("active");
+  });
+
+  // Close menu
+  closeBtn.addEventListener("click", () => {
+    burgerMenu.classList.remove("active");
+  });
+});
