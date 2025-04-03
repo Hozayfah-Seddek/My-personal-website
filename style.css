@@ -299,7 +299,7 @@ span {
 }
 
 .accordion {
-  margin-left: 140px;
+  margin-left: 5%;
   width: 80%;
 }
 
@@ -354,6 +354,7 @@ input[type="checkbox"] {
 }
 
 .accordion .content {
+  margin: 0 auto;
   padding: 0 10px;
   line-height: 26px;
   max-height: 0;
