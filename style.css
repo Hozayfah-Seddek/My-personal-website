@@ -144,7 +144,9 @@ span {
 
 .info p {
   color: var(--secondary-colour);
-  line-height: 22px;
+  line-height: 2.25rem;
+  font-size: large;
+  font-weight: bold;
 }
 
 .info a {
@@ -243,7 +245,7 @@ span {
 .body p {
   color: var(--secondary-colour);
   font-size: 22px;
-  line-height: 22px;
+  line-height: 2rem;
 }
 
 .body p a {
@@ -536,4 +538,41 @@ input[type="checkbox"] {
     padding: 0;
     margin: 0;
   }
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+}
+
+.tech-item img {
+  height: 60px;
+  width: auto;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.langs-row {
+  display: flex;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.lang-item h2 {
+  font-size: 28px;
+  color: var(--secondary-colour);
+  margin-bottom: 5px;
 }
