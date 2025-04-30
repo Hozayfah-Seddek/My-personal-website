@@ -91,6 +91,12 @@ nav ul li a:hover span {
   margin-left: 15px;
   width: 30px;
   cursor: pointer;
+  transform: scale(1);
+}
+
+#icon:hover {
+  transform: scale(1.5);
+  transition: all 0.2s;
 }
 
 .lang-box a:hover {

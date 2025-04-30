@@ -14,6 +14,7 @@ body {
   background: var(--bg-colour);
   font-family: Times-New-Roman, serif;
   position: relative;
+  overflow: hidden;
 }
 
 nav {
@@ -88,7 +89,8 @@ nav ul li a:hover span {
 }
 
 #icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
+  transition: all 0.2s;
 }
 
 .nav {
