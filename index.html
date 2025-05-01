@@ -120,15 +120,13 @@
     <script src="main.js"></script>
     <script>
       window.addEventListener("load", function () {
-        if (window.location.pathname === "/your-specific-page.html") {
-          const isOperaGX = navigator.userAgent.includes("OPR");
+        const isOperaGX = navigator.userAgent.includes("OPR");
 
-          if (isOperaGX && !localStorage.getItem("gxAlert")) {
-            alert(
-              "make sure that (RGX Image Enhancer) is disabled for this website to work properly."
-            );
-            localStorage.setItem("gxAlert", "true");
-          }
+        if (isOperaGX && !localStorage.getItem("gxAlert")) {
+          alert(
+            "make sure that (RGX Image Enhancer) is disabled for this website to work properly."
+          );
+          localStorage.setItem("gxAlert", "true");
         }
       });
     </script>
