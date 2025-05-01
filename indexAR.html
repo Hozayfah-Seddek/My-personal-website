@@ -111,5 +111,19 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        if (window.location.pathname === "/your-specific-page.html") {
+          const isOperaGX = navigator.userAgent.includes("OPR");
+
+          if (isOperaGX && !localStorage.getItem("gxAlert")) {
+            alert(
+              "تأكد أن خاصية (RGX Image Enhancer) غير مفعلة ليعمل الموقع بالشكل الصحيح."
+            );
+            localStorage.setItem("gxAlert", "true");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
